@@ -15,7 +15,7 @@ Evo runs a continuous evolution loop that proposes, validates, and applies code 
 
 ## The Self-Modifying Mechanism
 
-This is not Phoenix's development-mode file watcher. The system uses the BEAM's native hot code loading to replace a live module while the application keeps running:
+The system uses the BEAM's native hot code loading to replace a live module while the application keeps running:
 
 ```elixir
 :code.purge(module)      # unload the old bytecode
